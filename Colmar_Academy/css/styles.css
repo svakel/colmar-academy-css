@@ -1,0 +1,516 @@
+/*colors
+
+
+#808080 - warm gray
+
+#e3e7ea - lighter gray
+#778899 - gray
+#68798c - darker gray
+
+#a39484 - brown
+
+*/
+
+
+
+/* Universal Styles */
+
+html {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  color: #68798c;
+}
+
+.container{
+  width: 100%;
+  display:flex;
+  z-index: 1;
+}
+
+.flex{
+  display: flex;
+}
+
+.content {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
+}
+
+.image_container{
+  width:60%;
+  padding: 2rem 1.5rem;
+}
+
+.image_container img{
+  max-width: 100%;
+}
+
+.column_text_container{
+  width: 40%;
+  padding-top: 0rem;
+  font-size: 0.8rem;
+  margin-top: 0rem;
+  display:flex;
+  flex-direction: column;
+}
+
+p.basic_text{
+  color: #808080;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+p.name{
+  color: #808080;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+h3{
+  color: #68798c;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4{
+  color: #778899;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+a.read_more{
+  color: #808080;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+  letter-spacing: .02rem;
+}
+
+a:hover.read_more{
+  color: 	#a39484;
+}
+
+.gray{
+  background-color: #e3e7ea;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+.image_container{
+  width:100%;
+  padding: 0;
+}
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #778899;
+  margin: 0;
+  z-index: 2;
+}
+
+header .top_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+#colmar{
+  color: white;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  font-size: 1rem;
+}
+
+#academy{
+  font-size: 1rem;
+}
+
+
+#ic-logo{
+  height: 3rem;
+}
+
+
+header nav ul {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+nav.desktop li {
+  padding-left: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: white;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 780px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+  }
+
+  #colmar, #academy{
+    display: none;
+  }
+
+  nav.mobile li {
+    padding-left: 2.5rem;
+  }
+
+}
+
+/* banner */
+
+.banner {
+  position: relative;
+  top: 4rem;
+  background-color: #e3e7ea;
+}
+
+.banner_text{
+  width: 80%;
+  margin-left: 1.5rem;
+  margin-top: 4rem;
+}
+
+.banner_text h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #808080;
+  margin-bottom: 1rem;
+
+}
+
+.banner_text p{
+  font-size: .9rem;
+  color: gray;
+  line-height: 1.8;
+}
+
+.button{
+  display: block;
+  background-color: #68798c;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  margin-top: 2rem;
+  width: 12rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
+
+
+
+
+/* information section */
+
+.information {
+  position: relative;
+  top: 4rem;
+}
+
+.info_content{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 2rem;
+  height: auto;
+}
+
+.info_content h4{
+  padding-top: .5rem;
+}
+
+.info_text{
+  font-size: 0.8rem;
+  line-height: 1.2;
+  width: 65%;
+  color: gray;
+  margin-left: 1rem;
+  height: 7rem;
+}
+
+
+.orientation{
+  width: 35%;
+  background-image: url("../images/information-orientation.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.campus{
+  width: 35%;
+  background-image: url("../images/information-campus.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+}
+
+.lecture{
+  width: 35%;
+  background-image: url("../images/information-guest-lecture.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+}
+
+
+/* start_learning section */
+
+.start_learning {
+  background-color: #e3e7ea;
+}
+
+.learning_container{
+  margin: 1rem 3.5rem;
+}
+
+.learning_content{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.learning_text{
+  padding: 1rem;
+  background-color: white;
+}
+
+.start_learning h3, .thesis_exhibit h3{
+  color: #a39484;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+}
+
+.learning_content img{
+  max-width: 100%;
+  height: auto;
+}
+
+.start_learning .mobile{
+  display: none;
+}
+
+
+/* Thesis exhibit section */
+
+.thesis_exhibit {
+  position: relative;
+  top: 4rem;
+
+}
+
+.video video{
+  max-width: 100%;
+}
+
+
+.fisma{
+  width: 35%;
+  height: auto;
+  background-image: url("../images/thesis-fisma.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.now{
+  width: 35%;
+  height: auto;
+  background-image: url("../images/thesis-now-and-then.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+
+}
+
+
+/*footer */
+
+footer{
+  border-top: 1px solid #8493a3;
+  padding-top: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p{
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 1.5rem;
+}
+
+footer ul{
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+footer a{
+  font-size: 0.8rem;
+  color: gray;
+  padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+  .column{
+    flex-direction: column;
+  }
+
+  .banner.image-container{
+    width: 100%;
+    padding: 0;
+  }
+
+.column_text_container {
+      width: 100%;
+      padding-top: 0rem;
+      padding-bottom: 1rem;
+      font-size: 0.8rem;
+      margin-top: 0rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      }
+
+.banner_text {
+    width: 80%;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    padding: 2rem;
+}
+
+.information .image_container{
+    display: none;
+}
+
+
+.information .info_content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.orientation{
+  background-image: url("../images/information-orientation-mobile.jpg");
+  width: 100%;
+  height: 14rem;
+}
+
+
+.campus{
+  background-image: url("../images/information-campus-mobile.jpg");
+  width: 100%;
+  height: 14rem;
+}
+
+.lecture{
+  background-image: url("../images/information-guest-lecture-mobile.jpg");
+  width: 100%;
+  height: 14rem;
+}
+
+
+
+
+.info_text{
+  width: 100%;
+  margin-left: 2rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+
+}
+
+.gray{
+  background-color: white;
+}
+
+.learning_container .flex{
+  display: none;
+}
+
+.learning_container{
+  margin: 0;
+}
+
+
+
+.urban{
+  display: none;
+}
+
+.thesis_exhibit .info_content{
+  display: none;
+}
+
+.thesis_exhibit .column_text_container{
+  display: none;
+}
+
+.start_learning {
+    background-color: white;
+
+}
+
+.start_learning .mobile{
+  display: block;
+}
+
+.start_learning .mobile a{
+  display: block;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  background-color: #e3e7ea;
+  margin: .5rem;
+  font-size: 1.4rem;
+  color: #778899;
+}
+
+}
